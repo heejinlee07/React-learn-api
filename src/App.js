@@ -1,26 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// App.js를 진입점으로 활용, 환경설정
+// Book 컴포넌트는 화면을 그리는 역할.
+import React from "react";
+import { BookProvider } from "./Context/BookContext";
+import Book from "./Book";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BookProvider>
+      <Book />
+    </BookProvider>
   );
-}
+};
 
 export default App;
