@@ -1,6 +1,6 @@
 import axios from "axios";
 
-//기본 axio 옵션 구성을 합니다.
+//기본 axios 옵션 구성을 합니다.
 const api = axios.create({
   //host 부분엔 api 기본 주소 예컨대 뒤에 / 쓰기전의 endpoint를 넣습니다.
   host: "",
